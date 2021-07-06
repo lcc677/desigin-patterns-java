@@ -1,4 +1,4 @@
-package design.patterns.creator.factory.samplefactory;
+package design.patterns.creator.factory.factorymethod;
 
 public abstract class Pizza {
     protected String name;

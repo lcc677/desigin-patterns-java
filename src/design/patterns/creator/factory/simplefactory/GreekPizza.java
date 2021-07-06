@@ -1,4 +1,4 @@
-package design.patterns.creator.factory.samplefactory;
+package design.patterns.creator.factory.simplefactory;
 
 public class GreekPizza extends Pizza {
     @Override
