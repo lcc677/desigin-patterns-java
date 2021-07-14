@@ -1,8 +1,10 @@
-package design.patterns.behavior.observerargs;
+package design.patterns.behavior.observersystem;
 
 import java.util.ArrayList;
+import java.util.Observable;
+import java.util.Observer;
 
-public class WaterData implements Subject {
+public class WaterData extends Observable {
     private float temperature;
     private float humidity;
     private float pressure;
@@ -40,25 +42,8 @@ public class WaterData implements Subject {
         this.temperature = temperature;
         this.humidity = humidity;
         this.pressure = pressure;
-        notifyObserver();
+        setChanged();
+        notifyObservers();
     }
 
-    @Override
-    public void registerObserver(Observer observer) {
-        observers.add(observer);
-    }
-
-    @Override
-    public void removeObserver(Observer observer) {
-        if(observers.contains(observer)){
-            observers.remove(observer);
-        }
-    }
-
-    @Override
-    public void notifyObserver() {
-        for(Observer observer:observers){
-            observer.update(getTemperature(),getHumidity(),getPressure());
-        }
-    }
 }

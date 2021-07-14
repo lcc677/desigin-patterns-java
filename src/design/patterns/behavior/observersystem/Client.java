@@ -1,4 +1,4 @@
-package design.patterns.behavior.observerargs;
+package design.patterns.behavior.observersystem;
 
 public class Client {
     public static void main(String[] args) {
