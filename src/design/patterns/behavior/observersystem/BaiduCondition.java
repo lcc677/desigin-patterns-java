@@ -1,6 +1,5 @@
 package design.patterns.behavior.observersystem;
 
-import design.patterns.behavior.observerargs.Subject;
 
 import java.util.Observable;
 import java.util.Observer;
