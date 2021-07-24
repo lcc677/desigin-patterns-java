@@ -72,5 +72,21 @@ public class Client {
         // 按下返回按钮
         control.back();
 
+        System.out.println("-----------------开启party模式--------------------------");
+        // 测试party模式
+        Control control1 = new Control();
+        Command[] onCommands = {gardenLightOnCommand, ceilingLightOnCommand};
+        Command[] offCommands = {gardenLightOffCommand, ceilingLightOffCommand};
+
+        MacroCommand onMacroCommand = new MacroCommand(onCommands);
+        MacroCommand offMacroCommand = new MacroCommand(offCommands);
+
+        control1.setCommands(0, onMacroCommand, offMacroCommand);
+        control1.onKeyWasPushed(0);
+        control1.offKeyWasPushed(0);
+
+        control1.back();
+
+
     }
 }
