@@ -3,6 +3,10 @@ package design.patterns.behavior.command;
 public class Light {
 	private String description;
 
+	public Light(String description) {
+		this.description = description;
+	}
+
 	public String getDescription() {
 		return description;
 	}
@@ -11,9 +15,9 @@ public class Light {
 		this.description = description;
 	}
 	public void on(){
-		System.out.println("----电灯开了-");
+		System.out.println(description + " ----电灯开了-");
 	}
 	public void off(){
-		System.out.println("----电灯关了-");
+		System.out.println(description + " ----电灯关了-");
 	}
 }
