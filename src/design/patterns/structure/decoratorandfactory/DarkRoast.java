@@ -1,6 +1,6 @@
-package design.patterns.behavior.decorator;
+package design.patterns.structure.decoratorandfactory;
 
-public class DarkRoast extends Beverage{
+public class DarkRoast extends Beverage {
     public DarkRoast(){
         setDes("深焙咖啡");
         setPrice(5f);

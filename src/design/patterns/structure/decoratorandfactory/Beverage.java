@@ -1,4 +1,4 @@
-package design.patterns.behavior.decorator;
+package design.patterns.structure.decoratorandfactory;
 
 public abstract class Beverage {
     private String des;

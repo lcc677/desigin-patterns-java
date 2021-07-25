@@ -1,4 +1,4 @@
-package design.patterns.behavior.decoratorandfactory;
+package design.patterns.structure.decoratorandfactory;
 
 public class Client {
     public static void main(String[] args) {

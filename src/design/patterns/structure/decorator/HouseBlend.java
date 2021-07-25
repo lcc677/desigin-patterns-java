@@ -1,6 +1,6 @@
-package design.patterns.behavior.decoratorandfactory;
+package design.patterns.structure.decorator;
 
-public class HouseBlend extends Beverage {
+public class HouseBlend extends Beverage{
     public HouseBlend() {
         setDes("混合咖啡");
         setPrice(7f);

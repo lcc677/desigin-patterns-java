@@ -1,16 +1,7 @@
-package design.patterns.behavior.decoratorandfactory;
+package design.patterns.structure.decorator;
 
-public class SoyCondimentCreator implements CondimentCreator {
-
-    @Override
-    public CondimentDecorator createCondiment(Beverage beverage) {
-        return new SoyCondiment(beverage);
-    }
-}
-
-class SoyCondiment extends CondimentDecorator {
+public class SoyCondiment extends CondimentDecorator{
     Beverage beverage;
-
     public SoyCondiment(Beverage beverage) {
         this.beverage = beverage;
         setPrice(1.8f);

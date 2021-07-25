@@ -1,4 +1,4 @@
-package design.patterns.behavior.decorator;
+package design.patterns.structure.decorator;
 
 public class MochaCondiment extends CondimentDecorator{
 

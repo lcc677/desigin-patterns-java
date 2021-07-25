@@ -1,4 +1,4 @@
-package design.patterns.behavior.decorator;
+package design.patterns.structure.decorator;
 
 public class Client {
     public static void main(String[] args) {

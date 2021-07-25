@@ -1,4 +1,4 @@
-package design.patterns.behavior.decoratorandfactory;
+package design.patterns.structure.decoratorandfactory;
 
 public class MochaCondimentCreator implements CondimentCreator {
 
