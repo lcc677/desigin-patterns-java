@@ -1,4 +1,4 @@
-package design.patterns.structure.faced;
+package design.patterns.structure.facade;
 
 public class Project {
     public void on() {

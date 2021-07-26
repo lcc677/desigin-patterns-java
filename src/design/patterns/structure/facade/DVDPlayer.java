@@ -1,4 +1,4 @@
-package design.patterns.structure.faced;
+package design.patterns.structure.facade;
 
 public class DVDPlayer {
     public void on() {
@@ -7,6 +7,9 @@ public class DVDPlayer {
 
     public void setCD() {
         System.out.println("DVDPlayer 放入碟片");
+    }
+    public void paused(){
+        System.out.println("DVDPlayer 暂停了");
     }
 
     public void off() {

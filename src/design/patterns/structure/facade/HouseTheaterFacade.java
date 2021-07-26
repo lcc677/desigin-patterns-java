@@ -1,4 +1,4 @@
-package design.patterns.structure.faced;
+package design.patterns.structure.facade;
 
 public class HouseTheaterFacade {
     DVDPlayer dvdPlayer;
@@ -17,6 +17,7 @@ public class HouseTheaterFacade {
 
     public void watchMovie() {
         dvdPlayer.on();
+        dvdPlayer.setCD();
         project.on();
         screen.down();
         stereo.on();
@@ -25,8 +26,8 @@ public class HouseTheaterFacade {
         theaterLight.dim();
     }
 
-    public void paused(){
-
+    public void paused() {
+        dvdPlayer.paused();
     }
 
     public void endMovie() {
