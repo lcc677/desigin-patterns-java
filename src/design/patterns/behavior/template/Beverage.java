@@ -1,4 +1,4 @@
-package design.patterns.structure.template;
+package design.patterns.behavior.template;
 
 public abstract class Beverage {
     public void prepareDrink() {
