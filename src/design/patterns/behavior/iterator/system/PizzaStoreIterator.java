@@ -7,7 +7,7 @@ import java.util.Iterator;
  * date: 2021/7/31 下午4:16
  * author: cc
  */
-public class PizzaStoreIterator implements Iterator {
+public class PizzaStoreIterator implements Iterator<Menu> {
     Menu[] menus;
     int position = 0;
 
@@ -17,11 +17,7 @@ public class PizzaStoreIterator implements Iterator {
 
     @Override
     public boolean hasNext() {
-        if (position > menus.length || menus[position] == null) {
-            return false;
-        } else {
-            return true;
-        }
+        return position <= menus.length && menus[position] != null;
     }
 
     @Override

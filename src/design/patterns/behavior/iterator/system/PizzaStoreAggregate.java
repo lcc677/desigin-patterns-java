@@ -27,7 +27,7 @@ public class PizzaStoreAggregate implements Aggregate {
     }
 
     @Override
-    public Iterator getIterator() {
+    public Iterator<Menu> getIterator() {
         return new PizzaStoreIterator(menus);
     }
 }

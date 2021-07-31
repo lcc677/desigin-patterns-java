@@ -22,7 +22,7 @@ public class CoffeeStoreAggregate implements Aggregate {
     }
 
     @Override
-    public Iterator getIterator() {
+    public Iterator<Menu> getIterator() {
         return menus.iterator();
     }
 }

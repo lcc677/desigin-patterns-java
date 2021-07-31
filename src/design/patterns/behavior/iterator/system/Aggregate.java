@@ -7,6 +7,6 @@ public interface Aggregate {
 
     void remove(Menu menu);
 
-    Iterator getIterator();
+    Iterator<Menu> getIterator();
 
 }

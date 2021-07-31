@@ -8,9 +8,9 @@ import java.util.Iterator;
  * author: cc
  */
 public class Client {
-    static void printMenu(Iterator iterator) {
+    static void printMenu(Iterator<Menu> iterator) {
         while (iterator.hasNext()) {
-            Menu menu = (Menu) iterator.next();
+            Menu menu = iterator.next();
             System.out.println("**************************************");
             System.out.println("菜单名称: " + menu.getName());
             System.out.println("--描述: " + menu.getDescription());
@@ -45,11 +45,11 @@ public class Client {
 
 
         System.out.println("我打印pizza店的菜单");
-        Iterator pizzaStoreIterator = pizzaStoreAggregate.getIterator();
+        Iterator<Menu> pizzaStoreIterator = pizzaStoreAggregate.getIterator();
         printMenu(pizzaStoreIterator);
 
         System.out.println("我打印咖啡店的菜单");
-        Iterator coffeeStoreIterator = coffeeStoreAggregate.getIterator();
+        Iterator<Menu> coffeeStoreIterator = coffeeStoreAggregate.getIterator();
         printMenu(coffeeStoreIterator);
 
 
