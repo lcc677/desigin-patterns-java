@@ -1,4 +1,4 @@
-package design.patterns.behavior.state;
+package design.patterns.behavior.proxy.remote;
 
 import java.util.Random;
 
