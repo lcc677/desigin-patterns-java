@@ -68,6 +68,6 @@ public abstract class Person {
 	}
 
 	abstract public void Send(String message);
-	abstract public void receive(String from,String message);
+	abstract public void receive(String message);
 	
 }

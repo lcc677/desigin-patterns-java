@@ -18,7 +18,7 @@ public class ConcreteMediator implements Mediator{
 		// TODO Auto-generated method stub
 		for(Person p:persons) {
 			if(!name.equals(p.getName())) {
-				p.receive(name,message);
+				p.receive(name + ":" + message);
 			}
 			
 		}

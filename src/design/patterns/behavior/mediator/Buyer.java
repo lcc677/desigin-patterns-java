@@ -15,9 +15,9 @@ public class Buyer extends Person{
 	}
 
 	@Override
-	public void receive(String from, String message) {
+	public void receive(String message) {
 		// TODO Auto-generated method stub
-		getReceiveArea().append(from+ ":" +message + "\n");
+		getReceiveArea().append(message + "\n");
 	}
 
 }
