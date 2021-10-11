@@ -49,8 +49,8 @@ public class MenuItem extends MenuComponent{
 	@Override
 	Iterator createIterator() {
 		// TODO Auto-generated method stub
-//		return new NullIterator();
-		throw new UnsupportedOperationException();
+		return new NullIterator();
+//		throw new UnsupportedOperationException();
 //		return null;
 	}
 }
